@@ -2,6 +2,21 @@ package cobbs_pa2;
 
 import java.util.Scanner;
 
+
+//Pseudocode
+//ReadUnitType - consists of an if/else statement to allow users to choose between metric system and imperial system. 
+//The results from the choosing ar saved and then used in ReadMeasurmentData
+//
+//ReadMeasurementData uses the results from ReadUnityType to employ whether we are calculating for Mertic or  imperial 
+//with an if else statement to check the users choice. The first if checks if the user inputted imperial and then calls on the readImperialData function
+//the else statement does the same but for metric 
+//
+//ReadImperial/ReadMetric both ask the user to input their height and weight
+//
+//The calculatebmi function employs the formula to calculate the bmi with given variables defined  in the start of the class
+//Set height and weight ensures  the user  does not enter  a negative number
+
+
 public class BMICalculator {
 	
 	private double weight;
@@ -11,14 +26,17 @@ public class BMICalculator {
 	int unitType = 1;
 	
 	
+//	*************I was unsure if this is meant to be in my code as well. 	
+//	public static void main(String[] args) {
+//	    BMICalculator app = new BMICalculator();
+//	    app.readUserData();
+//	    app.calculateBmi();
+//	    app.displayBmi();
+//	}
 	
 	
-	public static void main(String[] args) {
-	    BMICalculator app = new BMICalculator();
-	    app.readUserData();
-	    app.calculateBmi();
-	    app.displayBmi();
-	}
+	
+	
 	
 	// one scanner that spans the entire code
 	Scanner sc = new Scanner(System.in);
